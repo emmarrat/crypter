@@ -3,8 +3,7 @@
 
 .header {
   padding: 20px 0;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
-
+  border-bottom: 1px solid #E6E8EC;;
   &__wrapper {
     @include flex;
   }
