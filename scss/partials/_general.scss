@@ -1,0 +1,46 @@
+@use "../var/colors"as *;
+@use "../var/mixins"as *;
+
+$addFont: 'Roboto Condensed',
+sans-serif;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgba(#000, 0.6);
+    background: #FFFBED;
+}
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+a {
+    color: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
