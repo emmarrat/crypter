@@ -5,6 +5,7 @@
   border: none;
   text-decoration: none;
   border-radius: 90px;
+  font-family: 'DM Sans', serif;
   &__bell {
     position: relative;
     width: 40px;
@@ -39,5 +40,9 @@
   &__upload {
     padding: 12px 16px;
     font-family: 'DM Sans', serif;
+  }
+  &__start-seacrh {
+    font-size: 16px;
+    padding: 16px 24px;
   }
 }

@@ -1,4 +1,5 @@
 @use "../var/mixins"as *;
+@use "../var/colors"as *;
 
 .main-nav {
   &__list {
@@ -9,7 +10,7 @@
 
   &__item {
     font-family: 'DM Sans', sans-serif;
-    color: #777E91;
+    color: $gray;
 
     &_active {
       color: #23262F;
