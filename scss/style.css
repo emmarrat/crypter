@@ -33,7 +33,6 @@ a {
 
 abbr[title] {
   border-bottom: none;
-  text-decoration: underline;
   text-decoration: underline dotted;
 }
 
@@ -159,14 +158,14 @@ template, [hidden] {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.6);
-  background: #FFFBED;
+  color: #23262F;
+  background: #FCFCFD;
 }
 
 .container {
-  max-width: 1210px;
+  max-width: 1122px;
   margin: 0 auto;
   padding: 0 15px;
 }
