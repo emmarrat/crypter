@@ -1,0 +1,10 @@
+.input {
+  border: 2px solid #E6E8EC;
+
+  &__search {
+    background: url(../../assets/icons/search.svg) 92% center no-repeat;
+    font-weight: 400;
+    font-size: 12px;
+    width: 256px;
+  }
+}

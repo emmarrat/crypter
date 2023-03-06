@@ -1,0 +1,22 @@
+@use "../var/mixins"as *;
+
+.main-nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    @include list;
+  }
+
+  &__item {
+    font-family: 'DM Sans', sans-serif;
+    color: #777E91;
+
+    &_active {
+      color: #23262F;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

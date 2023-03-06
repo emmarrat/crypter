@@ -7,11 +7,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
     <title>Crypter</title>
 </head>
 <body>
-
+<header class="header">
+    <div class="header__wrapper container">
+        <div class="header__left">
+            <a href="#" class="header__logo">
+                <img src="assets/images/logo.png" alt="Crypter-logo">
+            </a>
+            <nav class="main-nav header__nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item main-nav__item_active">
+                        <a href="#" class="main-nav__link">Discover</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">How it work</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__right">
+            <div class="header__input">
+                <label>
+                    <input class="input input__search" type="text" placeholder="Search">
+                </label>
+            </div>
+            <div class="header__btns">
+                <button class="btn btn__bell btn__bell_active"></button>
+                <a href="#" class="btn btn__filled btn__upload">Upload</a>
+                <button class="btn btn__outlined btn_wallet" type="button">Connect Wallet</button>
+            </div>
+        </div>
+    </div>
+</header>
 </body>
 </html>

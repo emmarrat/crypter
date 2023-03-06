@@ -192,4 +192,117 @@ iframe {
   height: auto;
 }
 
+.header {
+  padding: 20px 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+  width: 362px;
+}
+.header__logo {
+  margin-right: 32px;
+}
+.header__logo::after {
+  content: "";
+  position: absolute;
+  margin-left: 32px;
+  width: 2px;
+  height: 40px;
+  background: #E6E8EC;
+  border-radius: 2px;
+}
+.header__nav {
+  margin-left: 32px;
+  width: 50%;
+}
+.header__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 573px;
+}
+.header__input {
+  margin-right: 24px;
+}
+.header__input input {
+  padding: 10px 12px 10px 16px;
+  border-radius: 8px;
+}
+.header__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav__item {
+  font-family: "DM Sans", sans-serif;
+  color: #777E91;
+}
+.main-nav__item_active {
+  color: #23262F;
+}
+.main-nav__link {
+  text-decoration: none;
+}
+
+.input {
+  border: 2px solid #E6E8EC;
+}
+.input__search {
+  background: url(../../assets/icons/search.svg) 92% center no-repeat;
+  font-weight: 400;
+  font-size: 12px;
+  width: 256px;
+}
+
+.btn {
+  border: none;
+  text-decoration: none;
+  border-radius: 90px;
+}
+.btn__bell {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: url("../../assets/icons/bell.svg") center no-repeat;
+}
+.btn__bell_active:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #45B36B;
+  border-radius: 8px;
+  top: 0;
+  right: 0;
+}
+.btn__filled {
+  background: #3772FF;
+  color: #FCFCFD;
+}
+.btn__outlined {
+  border: 2px solid #E6E8EC;
+  background: transparent;
+  padding: 12px 16px;
+}
+.btn__upload {
+  padding: 12px 16px;
+  font-family: "DM Sans", serif;
+}
+
 /*# sourceMappingURL=style.css.map */

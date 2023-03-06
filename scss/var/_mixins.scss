@@ -1,0 +1,44 @@
+@use "_colors.scss"as *;
+
+@mixin xl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: 840px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (min-width: 640px) {
+    @content;
+  }
+}
+
+
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
