@@ -45,4 +45,19 @@
     font-size: 16px;
     padding: 16px 24px;
   }
+  &__place-bid {
+    padding: 16px 0;
+    margin-bottom: 8px;
+  }
+  &__arrow {
+    width: 40px;
+    height: 40px;
+  }
+  &__arrow-left {
+    background: url("../../assets/icons/arrow.svg")center no-repeat;
+    transform: rotate(-180deg);
+  }
+  &__arrow-right {
+    background: url("../../assets/icons/arrow.svg")center no-repeat;
+  }
 }
