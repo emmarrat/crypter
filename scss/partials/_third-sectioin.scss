@@ -1,0 +1,210 @@
+@use "../var/colors"as *;
+@use "../var/mixins"as *;
+
+.third-section {
+  margin-top: 136px;
+  @include flex;
+  align-items: start;
+
+  &__left {
+    @include flex;
+    align-items: start;
+
+    &-img {
+      max-width: 448px;
+      margin-bottom: 24px;
+    }
+
+    &-wrapper {
+      @include flex;
+      padding-left: 64px;
+      background: url("../../assets/images/avatar-white-big.png") left center no-repeat;
+    }
+
+    &-wrapper p {
+      margin: 0;
+    }
+
+    &-title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    &-subtitle {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: $darker;
+    }
+
+    &-bidName {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      color: $gray;
+    }
+
+    &-price {
+      display: inline-block;
+      padding: 8px 8px 6px;
+      border: 2px solid #45B36B;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 12px;
+      text-transform: uppercase;
+      color: $green;
+      margin: 0;
+    }
+
+    &-small {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin-left: 32px;
+    }
+
+    &-item {
+      display: flex;
+      margin-bottom: 32px;
+      align-items: center;
+      max-width: 351px;;
+    }
+
+    &-item:last-child {
+      margin-bottom: 0;
+    }
+
+    &-img-small {
+      border-radius: 12px;
+    }
+
+    &-miniWrapper {
+      margin-left: 24px;
+    }
+
+    &-title-mini {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 8px 0;
+    }
+
+    &-wrapper-mini {
+      padding-left: 35px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    &-wrapper-mini-1 {
+      background: url("../../assets/images/avatar-violet.png") left center / contain no-repeat;
+    }
+
+    &-wrapper-mini-2 {
+      background: url("../../assets/images/avatar-yellow.png") left center / contain no-repeat;
+    }
+
+    &-wrapper-mini span {
+      font-size: 14px;
+      line-height: 24px;
+      color: $gray;
+      margin-left: 11px;
+    }
+
+    &-btn {
+      padding: 8px 12px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 20px;
+      color: $gray;
+      margin: 0 0 24px 0;
+    }
+
+    &-item {
+      padding: 24px 0 25px 0;
+      border-top: 1px solid #E6E8EC;
+      position: relative;
+    }
+
+    &-item-1 {
+      border-top: none;
+    }
+
+    &-item p {
+      margin: 0;
+    }
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-left: 72px;
+      height: 56px;
+    }
+
+    &-inner::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      background: #23262F;
+      border-radius: 50%;
+      color: #FCFCFD;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      border: 2px solid #ffff;
+      top: 19px;
+      left: -4px;
+    }
+
+    &-inner-1 {
+      background: url("../../assets/images/avatar-violet.png") left center / contain no-repeat;
+    }
+
+    &-inner-1::before {
+      content: '6'
+    }
+
+    &-inner-2 {
+      background: url("../../assets/images/avatar-white.png") left center / contain no-repeat;
+    }
+
+    &-inner-2::before {
+      content: '2'
+    }
+
+    &-inner-3 {
+      background: url("../../assets/images/avatar-red.png") left center / contain no-repeat;
+    }
+
+    &-inner-3::before {
+      content: '3'
+    }
+
+    &-inner-4 {
+      background: url("../../assets/images/avatar-yellow.png") left center / contain no-repeat;
+    }
+
+    &-inner-4::before {
+      content: '4'
+    }
+
+    &-btn {
+      margin-top: 7px;
+    }
+
+  }
+}
