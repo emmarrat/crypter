@@ -192,6 +192,10 @@ iframe {
   height: auto;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .header {
   padding: 20px 0;
   border-bottom: 1px solid #E6E8EC;
@@ -465,6 +469,184 @@ iframe {
   justify-content: space-between;
   align-items: center;
   justify-content: start;
+}
+
+.third-section {
+  margin-top: 136px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: start;
+}
+.third-section__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: start;
+}
+.third-section__left-img {
+  max-width: 448px;
+  margin-bottom: 24px;
+}
+.third-section__left-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 64px;
+  background: url("../../assets/images/avatar-white-big.png") left center no-repeat;
+}
+.third-section__left-wrapper p {
+  margin: 0;
+}
+.third-section__left-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+.third-section__left-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #353945;
+}
+.third-section__left-bidName {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #777E91;
+}
+.third-section__left-price {
+  display: inline-block;
+  padding: 8px 8px 6px;
+  border: 2px solid #45B36B;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #45B36B;
+  margin: 0;
+}
+.third-section__left-small {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 32px;
+}
+.third-section__left-item {
+  display: flex;
+  margin-bottom: 32px;
+  align-items: center;
+  max-width: 351px;
+}
+.third-section__left-item:last-child {
+  margin-bottom: 0;
+}
+.third-section__left-img-small {
+  border-radius: 12px;
+}
+.third-section__left-miniWrapper {
+  margin-left: 24px;
+}
+.third-section__left-title-mini {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 8px 0;
+}
+.third-section__left-wrapper-mini {
+  padding-left: 35px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.third-section__left-wrapper-mini-1 {
+  background: url("../../assets/images/avatar-violet.png") left center/contain no-repeat;
+}
+.third-section__left-wrapper-mini-2 {
+  background: url("../../assets/images/avatar-yellow.png") left center/contain no-repeat;
+}
+.third-section__left-wrapper-mini span {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777E91;
+  margin-left: 11px;
+}
+.third-section__left-btn {
+  padding: 8px 12px;
+}
+.third-section__right {
+  display: flex;
+  flex-direction: column;
+}
+.third-section__right-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #777E91;
+  margin: 0 0 24px 0;
+}
+.third-section__right-item {
+  padding: 24px 0 25px 0;
+  border-top: 1px solid #E6E8EC;
+  position: relative;
+}
+.third-section__right-item-1 {
+  border-top: none;
+}
+.third-section__right-item p {
+  margin: 0;
+}
+.third-section__right-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 72px;
+  height: 56px;
+}
+.third-section__right-inner::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: #23262F;
+  border-radius: 50%;
+  color: #FCFCFD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: 2px solid white;
+  top: 19px;
+  left: -4px;
+}
+.third-section__right-inner-1 {
+  background: url("../../assets/images/avatar-violet.png") left center/contain no-repeat;
+}
+.third-section__right-inner-1::before {
+  content: "6";
+}
+.third-section__right-inner-2 {
+  background: url("../../assets/images/avatar-white.png") left center/contain no-repeat;
+}
+.third-section__right-inner-2::before {
+  content: "2";
+}
+.third-section__right-inner-3 {
+  background: url("../../assets/images/avatar-red.png") left center/contain no-repeat;
+}
+.third-section__right-inner-3::before {
+  content: "3";
+}
+.third-section__right-inner-4 {
+  background: url("../../assets/images/avatar-yellow.png") left center/contain no-repeat;
+}
+.third-section__right-inner-4::before {
+  content: "4";
+}
+.third-section__right-btn {
+  margin-top: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
