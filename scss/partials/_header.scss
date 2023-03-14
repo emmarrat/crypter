@@ -3,15 +3,26 @@
 
 .header {
   padding: 20px 0;
-  border-bottom: 1px solid #E6E8EC;;
+  border-bottom: 1px solid #E6E8EC;
+  @include sm {
+    padding-top: 48px;
+  }
+
   &__wrapper {
     @include flex;
+    @include sm {
+      flex-direction: column;
+      align-items: start;
+    }
   }
 
   &__left {
     display: flex;
     align-items: center;
     width: 362px;
+    @include lg {
+      width: auto;
+    }
   }
 
   &__logo {
@@ -26,68 +37,71 @@
       background: #E6E8EC;
       border-radius: 2px;;
     }
+
+    @include lg {
+      &::after {
+        content: none;
+      }
+    }
   }
 
   &__nav {
     margin-left: 32px;
     width: 50%;
+    @include lg {
+      display: none;
+    }
   }
 
   &__right {
     @include flex;
     width: 573px;
+    @include sm{
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
   }
-&__input {
-  margin-right: 24px;
-}
+
+  &__input {
+    margin-right: 24px;
+    @include sm {
+      margin: 10px 0 10px 0;
+    }
+  }
 
   &__input input {
     padding: 10px 12px 10px 16px;
     border-radius: 8px;
   }
+
   &__btns {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    @include sm {
+      flex-direction: column;
+    }
+  }
+  &__burger-input {
+    display: none;
   }
 
+  &__burger-label {
+    display: none;
+    @include sm {
+      display: block;
+      position: fixed;
+      right: 20px;
+      top: 48px;
+    }
+  }
 
-  //&__nav {
-  //    @include md {
-  //        margin-right: auto;
-  //    }
-  //
-  //    @include lg {
-  //        margin-right: 112px;
-  //        margin-left: auto;
-  //    }
-  //}
-  //
-  //&__btns {
-  //    display: flex;
-  //    flex-direction: column;
-  //    align-items: center;
-  //
-  //    @include sm {
-  //        display: block;
-  //        text-align: center;
-  //    }
-  //
-  //    @include md {
-  //        text-align: left;
-  //    }
-  //}
-  //
-  //&__btn {
-  //    margin-bottom: 20px;
-  //
-  //    @include sm {
-  //        margin-right: 21px;
-  //    }
-  //
-  //    @include md {
-  //        margin-bottom: 0;
-  //    }
-  //}
+  &__burger-label {
+    width: 32px;
+    height: 32px;
+    background: url("../../assets/icons/burger.svg") center no-repeat;
+  }
+
 }
