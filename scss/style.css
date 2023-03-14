@@ -409,10 +409,27 @@ button:hover {
 .first-section {
   margin-top: 128px;
 }
+@media screen and (max-width: 1024px) {
+  .first-section {
+    margin-top: 112px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .first-section {
+    margin-top: 64px;
+  }
+}
 .first-section__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 640px) {
+  .first-section__wrapper {
+    max-width: 311px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 .first-section__subtitle {
   color: #777E91;
@@ -426,6 +443,12 @@ button:hover {
   line-height: 48px;
   margin-bottom: 24px;
   font-family: "DM Sans", serif;
+}
+@media screen and (max-width: 640px) {
+  .first-section__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .main-page {

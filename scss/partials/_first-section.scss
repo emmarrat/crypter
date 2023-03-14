@@ -1,12 +1,24 @@
 @use "../var/colors"as *;
+@use "../var/mixins"as *;
 
 
 .first-section {
   margin-top: 128px;
+@include lg {
+  margin-top: 112px;
+}
+  @include sm {
+    margin-top: 64px;
+  }
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include sm {
+      max-width: 311px;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
   &__subtitle {
     color: $gray;
@@ -20,5 +32,9 @@
     line-height: 48px;
     margin-bottom: 24px;
     font-family: 'DM Sans', serif;
+    @include sm {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
 }
