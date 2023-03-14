@@ -1,3 +1,6 @@
+@use "../var/colors"as *;
+@use "../var/mixins"as *;
+
 .input {
   border: 2px solid #E6E8EC;
 
@@ -6,5 +9,8 @@
     font-weight: 400;
     font-size: 12px;
     width: 256px;
+    @include md {
+      width: 230px;
+    }
   }
 }

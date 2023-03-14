@@ -200,15 +200,31 @@ button:hover {
   padding: 20px 0;
   border-bottom: 1px solid #E6E8EC;
 }
+@media screen and (max-width: 640px) {
+  .header {
+    padding-top: 48px;
+  }
+}
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 640px) {
+  .header__wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+}
 .header__left {
   display: flex;
   align-items: center;
   width: 362px;
+}
+@media screen and (max-width: 1024px) {
+  .header__left {
+    width: auto;
+  }
 }
 .header__logo {
   margin-right: 32px;
@@ -222,9 +238,19 @@ button:hover {
   background: #E6E8EC;
   border-radius: 2px;
 }
+@media screen and (max-width: 1024px) {
+  .header__logo::after {
+    content: none;
+  }
+}
 .header__nav {
   margin-left: 32px;
   width: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .header__nav {
+    display: none;
+  }
 }
 .header__right {
   display: flex;
@@ -232,8 +258,20 @@ button:hover {
   align-items: center;
   width: 573px;
 }
+@media screen and (max-width: 640px) {
+  .header__right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .header__input {
   margin-right: 24px;
+}
+@media screen and (max-width: 640px) {
+  .header__input {
+    margin: 10px 0 10px 0;
+  }
 }
 .header__input input {
   padding: 10px 12px 10px 16px;
@@ -244,6 +282,30 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+@media screen and (max-width: 640px) {
+  .header__btns {
+    flex-direction: column;
+  }
+}
+.header__burger-input {
+  display: none;
+}
+.header__burger-label {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .header__burger-label {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 48px;
+  }
+}
+.header__burger-label {
+  width: 32px;
+  height: 32px;
+  background: url("../../assets/icons/burger.svg") center no-repeat;
 }
 
 .main-nav__list {
@@ -273,6 +335,11 @@ button:hover {
   font-size: 12px;
   width: 256px;
 }
+@media screen and (max-width: 720px) {
+  .input__search {
+    width: 230px;
+  }
+}
 
 .btn {
   border: none;
@@ -296,6 +363,11 @@ button:hover {
   top: 0;
   right: 0;
 }
+@media screen and (max-width: 720px) {
+  .btn__bell {
+    display: none;
+  }
+}
 .btn__filled {
   background: #3772FF;
   color: #FCFCFD;
@@ -308,6 +380,11 @@ button:hover {
 .btn__upload {
   padding: 12px 16px;
   font-family: "DM Sans", serif;
+}
+@media screen and (max-width: 640px) {
+  .btn__upload {
+    margin-bottom: 10px;
+  }
 }
 .btn__start-seacrh {
   font-size: 16px;
@@ -647,6 +724,10 @@ button:hover {
 }
 .third-section__right-btn {
   margin-top: 7px;
+}
+
+#burger:checked + label + .header__right {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
