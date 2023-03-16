@@ -5,13 +5,19 @@
   margin-top: 136px;
   @include flex;
   align-items: start;
-display: none;
+  @include lg {
+    flex-direction: column;
+    align-items: center;
+  }
   &__left {
     @include flex;
     align-items: start;
-
-    &-img {
+    &-big {
       max-width: 448px;
+    }
+    &-img {
+      max-width: 100%;
+      width: 100%;
       margin-bottom: 24px;
     }
 
@@ -29,6 +35,11 @@ display: none;
       font-weight: 600;
       font-size: 24px;
       line-height: 32px;
+      @include md {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
 
     &-subtitle {
@@ -36,6 +47,11 @@ display: none;
       font-size: 14px;
       line-height: 24px;
       color: $darker;
+      @include md {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+      }
     }
 
     &-bidName {
@@ -58,11 +74,15 @@ display: none;
       margin: 0;
     }
 
+
     &-small {
       display: flex;
       flex-direction: column;
       height: 100%;
       margin-left: 32px;
+      @include md {
+        display: none;
+      }
     }
 
     &-item {
@@ -112,6 +132,9 @@ display: none;
       line-height: 24px;
       color: $gray;
       margin-left: 11px;
+      @include mdL {
+        display: none;
+      }
     }
 
     &-btn {
@@ -122,6 +145,25 @@ display: none;
   &__right {
     display: flex;
     flex-direction: column;
+    margin-left: 32px;
+    @include lg {
+      margin:64px 0 0 0;
+      width: 100%;
+    }
+    @include md {
+      align-items: center;
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      @include lg {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      @include md {
+        flex-direction: column;
+      }
+    }
 
     &-title {
       font-weight: 600;
@@ -129,12 +171,18 @@ display: none;
       line-height: 20px;
       color: $gray;
       margin: 0 0 24px 0;
+      @include lg {
+        margin: 0;
+      }
     }
 
     &-item {
       padding: 24px 0 25px 0;
       border-top: 1px solid #E6E8EC;
       position: relative;
+      @include lg {
+        border-top: none;
+      }
     }
 
     &-item-1 {
@@ -204,6 +252,9 @@ display: none;
 
     &-btn {
       margin-top: 7px;
+      @include lg {
+        display: none;
+      }
     }
 
   }
