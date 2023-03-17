@@ -1,0 +1,39 @@
+@use "../var/colors"as *;
+@use "../var/mixins"as *;
+
+.hot-bid {
+  padding: 136px 0 128px;
+  &__header {
+    margin-bottom: 64px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 40px;
+      height: 40px;
+      top: 10%;
+      left: 91%;
+      position: absolute;
+      background: url("../../assets/icons/arrow.svg") center center no-repeat;
+      transform: rotate(-180deg);
+    }
+    &::after {
+      content: '';
+      width: 40px;
+      height: 40px;
+      top: 10%;
+      left: 96%;
+      position: absolute;
+      border: 2px solid #E6E8EC;
+      border-radius: 50%;
+      background: url("../../assets/icons/arrow.svg") center center no-repeat;
+    }
+  }
+  &__title {
+    margin: 0;
+  }
+
+  &__wrapper {
+    @include flex;
+  }
+}

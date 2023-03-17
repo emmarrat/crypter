@@ -1071,4 +1071,108 @@ button:hover {
   color: #777E91;
 }
 
+.hot-bid {
+  padding: 136px 0 128px;
+}
+.hot-bid__header {
+  margin-bottom: 64px;
+  position: relative;
+}
+.hot-bid__header::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: 10%;
+  left: 91%;
+  position: absolute;
+  background: url("../../assets/icons/arrow.svg") center center no-repeat;
+  transform: rotate(-180deg);
+}
+.hot-bid__header::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: 10%;
+  left: 96%;
+  position: absolute;
+  border: 2px solid #E6E8EC;
+  border-radius: 50%;
+  background: url("../../assets/icons/arrow.svg") center center no-repeat;
+}
+.hot-bid__title {
+  margin: 0;
+}
+.hot-bid__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-item__img {
+  border-radius: 16px;
+}
+.card-item__content {
+  margin-top: 20px;
+  position: relative;
+}
+.card-item__content-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
+}
+.card-item__content-center {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-left: 177px;
+  background: url("../../assets/icons/avatars.svg") left center no-repeat;
+  height: 24px;
+  margin-bottom: 12px;
+}
+.card-item__content-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  background: url("../../assets/icons/Line.svg") left center no-repeat;
+}
+.card-item__content-bottom::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #E6E8EC;
+  border-radius: 1px;
+  position: absolute;
+  top: 64%;
+  left: 0;
+}
+.card-item__descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+.card-item__info {
+  margin: 0;
+}
+.card-item__footer-text {
+  font-size: 12px;
+  line-height: 20px;
+  color: #777E91;
+}
+.card-item__footer-text span {
+  font-weight: 600;
+  color: #353945;
+}
+
+.section-title {
+  font-family: "DM Sans", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
