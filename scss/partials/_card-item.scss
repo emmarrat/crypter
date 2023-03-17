@@ -2,6 +2,16 @@
 @use "../var/mixins"as *;
 
 .card-item {
+  margin: 2.5px;
+
+  @include lg {
+    &:last-child {
+      display: none;
+    }
+  }
+  @include md {
+    margin: 10px;
+  }
   &__img {
     border-radius: 16px;
   }

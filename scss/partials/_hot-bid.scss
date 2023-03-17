@@ -2,7 +2,8 @@
 @use "../var/mixins"as *;
 
 .hot-bid {
-  padding: 136px 0 128px;
+  padding-top: 136px;
+  padding-bottom: 128px;
   &__header {
     margin-bottom: 64px;
     position: relative;
@@ -16,6 +17,9 @@
       position: absolute;
       background: url("../../assets/icons/arrow.svg") center center no-repeat;
       transform: rotate(-180deg);
+      @include md {
+        left: 71%;
+      }
     }
     &::after {
       content: '';
@@ -27,6 +31,9 @@
       border: 2px solid #E6E8EC;
       border-radius: 50%;
       background: url("../../assets/icons/arrow.svg") center center no-repeat;
+      @include md {
+        left: 81%;
+      }
     }
   }
   &__title {
@@ -35,5 +42,9 @@
 
   &__wrapper {
     @include flex;
+    @include md {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }

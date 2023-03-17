@@ -1072,7 +1072,8 @@ button:hover {
 }
 
 .hot-bid {
-  padding: 136px 0 128px;
+  padding-top: 136px;
+  padding-bottom: 128px;
 }
 .hot-bid__header {
   margin-bottom: 64px;
@@ -1088,6 +1089,11 @@ button:hover {
   background: url("../../assets/icons/arrow.svg") center center no-repeat;
   transform: rotate(-180deg);
 }
+@media screen and (max-width: 720px) {
+  .hot-bid__header::before {
+    left: 71%;
+  }
+}
 .hot-bid__header::after {
   content: "";
   width: 40px;
@@ -1099,6 +1105,11 @@ button:hover {
   border-radius: 50%;
   background: url("../../assets/icons/arrow.svg") center center no-repeat;
 }
+@media screen and (max-width: 720px) {
+  .hot-bid__header::after {
+    left: 81%;
+  }
+}
 .hot-bid__title {
   margin: 0;
 }
@@ -1107,7 +1118,26 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 720px) {
+  .hot-bid__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
+.card-item {
+  margin: 2.5px;
+}
+@media screen and (max-width: 1024px) {
+  .card-item:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 720px) {
+  .card-item {
+    margin: 10px;
+  }
+}
 .card-item__img {
   border-radius: 16px;
 }
