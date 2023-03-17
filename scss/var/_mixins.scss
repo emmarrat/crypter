@@ -1,5 +1,10 @@
 @use "_colors.scss"as *;
 
+@mixin xlg {
+  @media screen and (max-width: 1338px) {
+    @content;
+  }
+}
 
 @mixin lg {
   @media screen and (max-width: 1024px) {

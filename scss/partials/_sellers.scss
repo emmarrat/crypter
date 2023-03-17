@@ -14,6 +14,13 @@
     position: absolute;
     background: url("../../assets/icons/arrow.svg") center center no-repeat;
     transform: rotate(-180deg);
+    @include xlg {
+      top: 90%;
+      left: 44%;
+    }
+    @include sm {
+        content: none;
+    }
   }
   &::after {
     content: '';
@@ -25,13 +32,27 @@
     border: 2px solid #E6E8EC;
     border-radius: 50%;
     background: url("../../assets/icons/arrow.svg") center center no-repeat;
+    @include xlg {
+      top: 90%;
+      left: 53%;
+    }
+    @include sm {
+      content: none;
+    }
   }
   &__header {
     @include flex;
     margin-bottom: 64px;
+    @include md {
+      flex-direction: column;
+      align-items: start;
+    }
   }
 
   &__left {
+    @include md {
+      margin-bottom: 48px;
+    }
     &-up {
       font-weight: 600;
       font-size: 24px;
@@ -62,6 +83,10 @@
   &__wrapper {
     @include flex;
     align-items: start;
+    flex-wrap: wrap;
+    @include sm {
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -70,6 +95,13 @@
     border-radius: 16px;
     box-shadow: 0 64px 64px -48px rgba(31, 47, 70, 0.12);
     flex-basis: 198px;
+    margin: 5px;
+
+    @include lg {
+      &:last-child {
+        display: none;
+      }
+    }
 
     &-header {
       height: 48px;

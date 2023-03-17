@@ -902,6 +902,17 @@ button:hover {
   background: url("../../assets/icons/arrow.svg") center center no-repeat;
   transform: rotate(-180deg);
 }
+@media screen and (max-width: 1338px) {
+  .sellers::before {
+    top: 90%;
+    left: 44%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .sellers::before {
+    content: none;
+  }
+}
 .sellers::after {
   content: "";
   width: 40px;
@@ -913,11 +924,33 @@ button:hover {
   border-radius: 50%;
   background: url("../../assets/icons/arrow.svg") center center no-repeat;
 }
+@media screen and (max-width: 1338px) {
+  .sellers::after {
+    top: 90%;
+    left: 53%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .sellers::after {
+    content: none;
+  }
+}
 .sellers__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 64px;
+}
+@media screen and (max-width: 720px) {
+  .sellers__header {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media screen and (max-width: 720px) {
+  .sellers__left {
+    margin-bottom: 48px;
+  }
 }
 .sellers__left-up {
   font-weight: 600;
@@ -947,6 +980,12 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   align-items: start;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 640px) {
+  .sellers__wrapper {
+    justify-content: center;
+  }
 }
 .sellers__item {
   padding: 24px;
@@ -954,6 +993,12 @@ button:hover {
   border-radius: 16px;
   box-shadow: 0 64px 64px -48px rgba(31, 47, 70, 0.12);
   flex-basis: 198px;
+  margin: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .sellers__item:last-child {
+    display: none;
+  }
 }
 .sellers__item-header {
   height: 48px;
