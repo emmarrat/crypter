@@ -1205,4 +1205,109 @@ button:hover {
   margin: 0;
 }
 
+.collections {
+  background: #F4F5F6;
+  padding: 128px 0;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .collections::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    top: 10%;
+    left: 87%;
+    position: absolute;
+    background: url("../../assets/icons/arrow.svg") center center no-repeat;
+    transform: rotate(-180deg);
+  }
+}
+@media screen and (max-width: 640px) {
+  .collections::before {
+    top: 94%;
+    left: 42%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .collections::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    top: 10%;
+    left: 93%;
+    position: absolute;
+    border: 2px solid #E6E8EC;
+    border-radius: 50%;
+    background: url("../../assets/icons/arrow.svg") center center no-repeat;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 640px) {
+  .collections::after {
+    top: 94%;
+    left: 55%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collections {
+    padding: 64px 0 136px;
+  }
+}
+.collections__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .collections__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.collections__header {
+  margin-bottom: 80px;
+}
+.collections__item {
+  margin: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .collections__item {
+    margin: 10px;
+  }
+}
+.collections__info {
+  margin-top: 16px;
+}
+.collections__info-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+.collections__info-bottom {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 36px;
+  background: url("../../assets/images/avatar-mini.png") center left no-repeat;
+}
+.collections__info-author {
+  font-weight: 500;
+  line-height: 24px;
+  color: #353945;
+}
+.collections__info-author span {
+  font-weight: 400;
+}
+.collections__info-more {
+  padding: 8px 8px 6px;
+  border: 2px solid #E6E8EC;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=style.css.map */
