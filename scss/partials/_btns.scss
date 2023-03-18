@@ -67,4 +67,8 @@
   &__arrow-right {
     background: url("../../assets/icons/arrow.svg")center no-repeat;
   }
+  &__more {
+    padding-right: 44px;
+    background: url("../../assets/icons/loading.svg") 88% center no-repeat;
+  }
 }
