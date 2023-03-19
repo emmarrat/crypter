@@ -13,6 +13,10 @@
     @include flex;
     padding-bottom: 32px;
     border-bottom: 1px solid #E6E8EC;
+    @include md {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__recently {
@@ -21,11 +25,30 @@
     border-radius: 12px;
     width: 180px;
     background: url("../../assets/icons/arrow-gray-down.svg") 95% center no-repeat;
+    @include md {
+      margin-bottom: 20px;
+      width: 100%;
+      background-position-x: 97%;
+    }
+  }
+  &__hidden {
+    display: none;
+    @include md {
+      display: block;
+    }
+  }
+  &__nav {
+    @include md {
+      display: none;
+    }
   }
 
   &__list {
     @include list;
-    @include flex
+    @include flex;
+    @include md {
+      margin-bottom: 20px;
+    }
   }
 
   &__list-item {
@@ -33,6 +56,12 @@
 
     &:last-child {
       margin-right: 0;
+    }
+    @include lg {
+      &:nth-child(1),
+      &:nth-child(2){
+        display: none;
+      }
     }
   }
 
@@ -56,10 +85,24 @@
     background-image: url("../../assets/icons/close.svg");
     background-position: 78% center;
     background-repeat: no-repeat;
+    @include md {
+      display: none;
+    }
+  }
+  &__btn_hidden {
+    padding: 16px 24px;
+    width: 100%;
+    display: none;
+    @include md {
+      display: block;
+    }
   }
 
   &__center {
     padding-top: 32px;
+    @include md {
+      display: none;
+    }
   }
   &__tags-name {
       font-weight: 700;
@@ -73,13 +116,21 @@
     @include flex;
     flex-wrap: wrap;
     margin-bottom: 32px;
+    @include md {
+      justify-content: center;
+    }
     &-wrapp {
       height: 84px;
-
+      margin: 5px;
       width: 256px;
       display: flex;
       flex-direction: column;
       justify-content: end;
+      @include lg {
+        &:nth-child(3) {
+          display: none;
+        }
+      }
     }
   }
   &__filter {
@@ -95,9 +146,17 @@
   &__wrapper {
     @include flex;
     flex-wrap: wrap;
+    @include md {
+      justify-content: center;
+    }
   }
   &__item {
     margin-bottom: 32px;
+    @include lg {
+      &:nth-last-child(-n+2) {
+        display: none;
+      }
+    }
   }
   &__btn-cover {
     display: flex;

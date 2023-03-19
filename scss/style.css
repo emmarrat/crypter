@@ -1328,12 +1328,38 @@ button:hover {
   padding-bottom: 32px;
   border-bottom: 1px solid #E6E8EC;
 }
+@media screen and (max-width: 720px) {
+  .discover__top {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .discover__recently {
   padding: 14px 8px 14px 16px;
   border: 2px solid #E6E8EC;
   border-radius: 12px;
   width: 180px;
   background: url("../../assets/icons/arrow-gray-down.svg") 95% center no-repeat;
+}
+@media screen and (max-width: 720px) {
+  .discover__recently {
+    margin-bottom: 20px;
+    width: 100%;
+    background-position-x: 97%;
+  }
+}
+.discover__hidden {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  .discover__hidden {
+    display: block;
+  }
+}
+@media screen and (max-width: 720px) {
+  .discover__nav {
+    display: none;
+  }
 }
 .discover__list {
   margin: 0;
@@ -1343,11 +1369,21 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 720px) {
+  .discover__list {
+    margin-bottom: 20px;
+  }
+}
 .discover__list-item {
   margin-right: 24px;
 }
 .discover__list-item:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 1024px) {
+  .discover__list-item:nth-child(1), .discover__list-item:nth-child(2) {
+    display: none;
+  }
 }
 .discover__list-link {
   text-decoration: none;
@@ -1368,8 +1404,28 @@ button:hover {
   background-position: 78% center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 720px) {
+  .discover__btn {
+    display: none;
+  }
+}
+.discover__btn_hidden {
+  padding: 16px 24px;
+  width: 100%;
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  .discover__btn_hidden {
+    display: block;
+  }
+}
 .discover__center {
   padding-top: 32px;
+}
+@media screen and (max-width: 720px) {
+  .discover__center {
+    display: none;
+  }
 }
 .discover__tags-name {
   font-weight: 700;
@@ -1386,12 +1442,23 @@ button:hover {
   flex-wrap: wrap;
   margin-bottom: 32px;
 }
+@media screen and (max-width: 720px) {
+  .discover__filters {
+    justify-content: center;
+  }
+}
 .discover__filters-wrapp {
   height: 84px;
+  margin: 5px;
   width: 256px;
   display: flex;
   flex-direction: column;
   justify-content: end;
+}
+@media screen and (max-width: 1024px) {
+  .discover__filters-wrapp:nth-child(3) {
+    display: none;
+  }
 }
 .discover__filter {
   border: 2px solid #E6E8EC;
@@ -1409,8 +1476,18 @@ button:hover {
   align-items: center;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 720px) {
+  .discover__wrapper {
+    justify-content: center;
+  }
+}
 .discover__item {
   margin-bottom: 32px;
+}
+@media screen and (max-width: 1024px) {
+  .discover__item:nth-last-child(-n+2) {
+    display: none;
+  }
 }
 .discover__btn-cover {
   display: flex;
